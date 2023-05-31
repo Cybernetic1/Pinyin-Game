@@ -5,7 +5,7 @@ themes = [
 		["music-BladeRunner.mp3", "background-BladeRunner.jpg"],
 		["music-Beethoven-7-2-A.mp3", "background-MobyDick.jpg"],
 		["music-CandyMan.mp3", "background-TheRing2.jpg"],
-		["music-流星雨.mp3", "background-Doris-mobile.jpg.png"],
+		["music-流星雨.mp3", "background-Doris.jpg"],
 		["music-TRON.mp3", "background-TRON.jpg"],
 		["music-Beethoven-7-2-B.mp3", "background-MobyDick-2.jpg"],
 	];
