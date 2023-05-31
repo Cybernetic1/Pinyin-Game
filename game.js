@@ -17,7 +17,7 @@ $("#music").bind('ended', nextSong);
 
 function nextSong() {
 	song_idx += 1;
-	if (song_idx > 4)
+	if (song_idx >= 4)
 		song_idx = 0;
 	background.src = "images/" + themes[song_idx][1];
 	music.src = "sounds/" + themes[song_idx][0];
