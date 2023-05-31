@@ -192,7 +192,8 @@
 	var wordlist = new Array();
 	var num_words = 0;
 
-	fetch('https://cybernetic1.github.io/game1/chinese-words.txt')
+	// fetch('https://cybernetic1.github.io/game1/chinese-words.txt')
+	fetch('./chinese-words.txt')
 	  .then((response) => {
 		return response.text();
 	  })
