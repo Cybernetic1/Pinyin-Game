@@ -1,23 +1,28 @@
 var FPS = 10;			// frames per second, ie, how fast game objects are updated
 
 themes = [
-	["music-horror.mp3", "background-TheRing.jpg"],
-	["music-BladeRunner.mp3", "background-BladeRunner.jpg"],
-	["music-CandyMan.mp3", "background-TheRing2.jpg"],
-	["music-TRON.mp3", "background-TRON.jpg"]];
+		["music-horror.mp3", "background-TheRing.jpg"],
+		["music-BladeRunner.mp3", "background-BladeRunner.jpg"],
+		["music-Beethoven-7-2A.mp3", "background-MobyDick.jpg"],
+		["music-CandyMan.mp3", "background-TheRing2.jpg"],
+		["music-TRON.mp3", "background-TRON.jpg"],
+	//	["music-Beethoven-7-2B.mp3", "background-MobyDick.jpg"],
+		["music-流星雨.mp3", "background-Doris-mobile.jpg.png"],
+	];
 
 function butt(ch) {
 	keybuff = ch;
 }
 
 var song_idx = 0;
-var music = document.getElementById("music");
-var background = document.getElementById("background");
+const numSongs = themes.length
+const music = document.getElementById("music");
+const background = document.getElementById("background");
 $("#music").bind('ended', nextSong);
 
 function nextSong() {
 	song_idx += 1;
-	if (song_idx >= 4)
+	if (song_idx >= numSongs)
 		song_idx = 0;
 	background.src = "images/" + themes[song_idx][1];
 	music.src = "sounds/" + themes[song_idx][0];
